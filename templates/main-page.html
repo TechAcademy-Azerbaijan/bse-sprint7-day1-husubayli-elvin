@@ -5,12 +5,12 @@
 {% for student in students %}
     {% if  student.status == 'active' %}
         <li>Student ID: {{student['id']}}</li>
-        <li><a href="/students/{{student.id}}">Student name: {{student['name']}}</a></li>
-        <li>Name: {{student['surname']}}</li>
+        <li><a href="/students/{{student.id}}">Name: {{student['name']}}</a></li>
+        <li>Surname: {{student['surname'] | title}}</li>
         <li>Gender: {{student['gender']}}</li>
         <li>Status: {{student['status']}}</li>
-        <li>Image: <img src="Image: {{student['img']}}" alt="">URL</li>
-        <li>Biography: {{student['bio']}}</li>
+        <li>Image: <img src="{{student['img']}}" alt="" style="height: 50px; width: 50px;"></li>
+        <li style="margin-bottom: 20px;">Biography: {{student['bio']}}</li>
     {% endif %}
 {% endfor %}
 </ul>

@@ -10,7 +10,7 @@ students = [
         'surname': 'Azimov',
         'gender': 'Male',
         'status': 'active',
-        'img': 'url',
+        'img': 'https://www.univ-amu.fr/system/files/2018-10/DFD-TUILE-Devenir_doctorant.jpg',
         'bio': ''
     },
     {
@@ -19,7 +19,7 @@ students = [
         'surname': 'Suleymanov',
         'gender': 'Male',
         'status': 'active',
-        'img': 'url',
+        'img': 'https://www.univ-amu.fr/system/files/2018-10/DFD-TUILE-Devenir_doctorant.jpg',
         'bio': ''
     },
     {
@@ -28,7 +28,7 @@ students = [
         'surname': 'Samandarli',
         'gender': 'Male',
         'status': 'active',
-        'img': 'url',
+        'img': 'https://www.univ-amu.fr/system/files/2018-10/DFD-TUILE-Devenir_doctorant.jpg',
         'bio': 'Now! I learning PYTHON'
     },
     {
@@ -37,7 +37,7 @@ students = [
         'surname': 'Samandarli',
         'gender': 'Male',
         'status': 'deactive',
-        'img': 'url',
+        'img': 'https://www.univ-amu.fr/system/files/2018-10/DFD-TUILE-Devenir_doctorant.jpg',
         'bio': 'sadasdasda'
     }
 ]

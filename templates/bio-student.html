@@ -6,7 +6,11 @@
     {% if col == 'bio' and student[col] == '' %}
         <li>I'm a student at Tech academy.</li>
     {% else %}
+        {% if col == 'img' %}
+            <li>Image: <img src="{{student[col]}}"></li>
+        {% else %}
         <li>{{col | title}}: {{student[col] | title}}</li>
+        {% endif %}
     {% endif %}
     {% endfor %}
     </ul>
