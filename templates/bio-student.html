@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+    {% for col in student %}
+    {% if col == 'bio' and student[col] == '' %}
+        <li>I'm a student at Tech academy.</li>
+    {% else %}
+        <li>{{col | title}}: {{student[col] | title}}</li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+{% endblock %}

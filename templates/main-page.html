@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+{% for student in students %}
+    {% if  student.status == 'active' %}
+        <li>Student ID: {{student['id']}}</li>
+        <li><a href="/students/{{student.id}}">Student name: {{student['name']}}</a></li>
+        <li>Name: {{student['surname']}}</li>
+        <li>Gender: {{student['gender']}}</li>
+        <li>Status: {{student['status']}}</li>
+        <li>Image: <img src="Image: {{student['img']}}" alt="">URL</li>
+        <li>Biography: {{student['bio']}}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endblock %}
